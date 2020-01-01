@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{F722BA1D-2EBE-4B61-B0C7-DE6982E06677}|">
+  <MonoDevelop.Ide.ItemProperties.sitem PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="sitem/Style/Css/main.css">
+    <Files>
+      <File FileName="sitem/Web.config" Line="14" Column="40" />
+      <File FileName="sitem/packages.config" Line="1" Column="1" />
+      <File FileName="sitem/Style/Css/main.css" Line="440" Column="18" />
+      <File FileName="sitem/Shared/Main.Master" Line="25" Column="16" />
+      <File FileName="sitem/View/Blog.aspx" Line="105" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="sitem" expanded="True">
+            <Node name="sitem" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="Style" expanded="True">
+                <Node name="Css" expanded="True">
+                  <Node name="main.css" selected="True" />
+                </Node>
+                <Node name="Images" expanded="True" />
+              </Node>
+              <Node name="View" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <RunToCursorBreakpoint file="/Users/Samet/Desktop/BlogSitem/sitem/sitem/View/Blog.aspx" relfile="sitem/View/Blog.aspx" line="114" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <AuthorInfo Name="Samet SARIYILDIZ" Email="" Copyright="" Company="" Trademark="" />
+</Properties>

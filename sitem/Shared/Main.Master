@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="sitem.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Samet SARIYILDIZ Web Sitesi</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%-- CSS DEFINE --%>
+    <link href="../Style/Css/main.css" rel="stylesheet" />
+    <link href="../Style/Css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <%-- HEADER --%>
+    <div class="bodys">
+        <div class="bodys-title">
+            <img id="id" width="200px;" height="200px;" style="margin-left: 60px; border: 4px solid white; border-radius: 100px; margin-top: 80px;" src="../Style/Images/profile.png " alt="Samet Sarıyıldız">
+            <h3 style="margin-top: -130px; margin-left: 280px; color: white; z-index: 99; font-family: monospace;">Samet SARIYILDIZ</h3>
+            <h4 style="margin-top: -10px; margin-left: 280px; color: white; z-index: 99; font-family: monospace;">Bilgisayar Mühendisi</h4>
+            <img>
+        </div>
+
+    </div>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <%-- FOOTER --%>
+    <div class="footer">
+        <div class="footer-content">
+            <i style="color: white; padding: 10px; cursor: pointer; font-size: 18px;" class="fab fa-facebook"></i>
+            <i style="color: white; padding: 10px; cursor: pointer; font-size: 18px" class="fab fa-instagram"></i>
+            <i style="color: white; padding: 10px; cursor: pointer; font-size: 18px" class="fab fa-linkedin"></i>
+            <i style="color: white; padding: 10px; cursor: pointer; font-size: 18px" class="fab fa-youtube"></i>
+            <p>Designed By Samet SARIYILDIZ. 2019 © Tüm Hakları Saklıdır.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,812 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1b2a33;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+@font-face {
+    font-family: 'Choplin-ExtraLight-DEMO';
+    src: url('../WebFonts/Choplin-ExtraLight-DEMO.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+/* Safari 4.0 - 8.0 */
+#div1 {
+    -webkit-animation-timing-function: linear;
+}
+
+#div2 {
+    -webkit-animation-timing-function: ease;
+}
+
+#div3 {
+    -webkit-animation-timing-function: ease-in;
+}
+
+#div4 {
+    -webkit-animation-timing-function: ease-out;
+}
+
+#div5 {
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+/* Standard syntax */
+#div1 {
+    animation-timing-function: linear;
+}
+
+#div2 {
+    animation-timing-function: ease;
+}
+
+#div3 {
+    animation-timing-function: ease-in;
+}
+
+#div4 {
+    animation-timing-function: ease-out;
+}
+
+#div5 {
+    animation-timing-function: ease-in-out;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url(../Images/back.jpg);
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Madeleina Sans';
+    src: url('../WebFonts/Madeleina Sans.otf') format('opentype');
+}
+
+/*#region GENEL TASARIM*/
+/*************************************/
+/*************************************/
+/*#region FOOTER*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    float: right;
+    background-image: linear-gradient(45deg,#1b2a33, #0d2533);
+}
+
+.footer-content {
+    text-align: center;
+    font-display: block;
+    font-family: Roboto;
+    font-size: 10px;
+}
+
+    .footer-content p {
+        text-align: center;
+        font-style: italic;
+        letter-spacing: 1px;
+        /*color:rgba(58,186,247,1);*/
+        color: white;
+    }
+
+/*#endregion*/
+
+/*#region HEADER*/
+.header {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    border: 1px solid #464343;
+    border-radius: 4px;
+    border-left: 4px dotted #ffd800;
+    background-image: linear-gradient(45deg,#2c2929, rgba(122,122,122,1));
+    -webkit-box-shadow: 16px 6px 96px -80px rgba(122,122,122,1);
+    -moz-box-shadow: 16px 6px 96px -80px rgba(122,122,122,1);
+    box-shadow: 16px 6px 96px -80px rgba(122,122,122,1);
+    width: 70%;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border-right-color: #ffd800;
+    border-right: 3px outset #ffd800;
+}
+
+.header-foto {
+    border: 1px solid rgb(0,0,0);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    border-radius: 50px;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+}
+
+    .header-foto:hover {
+        z-index: 2;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.header-blog {
+    display: block;
+    width: auto;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 18px;
+    float: left;
+    font-family: 'Madeleina Sans';
+    font-display: block;
+    text-align: left;
+}
+
+    .header-blog ul li {
+        padding: 2px;
+        color: #ffd800;
+    }
+
+        .header-blog ul li i {
+            color: #ffd800;
+            font-size: 18px;
+        }
+
+.header-foto image {
+    border: 3px solid #464343;
+    border-radius: 4px;
+}
+
+.header-blog-madalya {
+    float: right;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*#endregion*/
+
+/*#region LEFT PANEL*/
+.left_panel {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    display: block;
+    background: #1b2a33;
+    transition: all .2s ease;
+    overflow-y: scroll;
+    bottom: 0;
+}
+
+.left_panel_content {
+    margin-top: 100px;
+    width: 200px;
+    font-family: 'Madeleina Sans';
+    height: auto;
+    text-align: center;
+}
+
+    .left_panel_content p {
+        color: #ffd800;
+    }
+
+    .left_panel_content h3 {
+        color: rgb(0,0,0);
+        padding: 10px;
+        background: #978313
+    }
+
+    .left_panel_content ul li {
+        list-style: lower-roman;
+        color: #ffd800;
+        margin-left: -10px;
+        font-family: 'Madeleina Sans';
+    }
+/*#endregion*/
+
+/*#region RIGHT PANEL*/
+.right_panel {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    display: block;
+    background: #1b2a33;
+    transition: all .2s ease;
+    overflow-y: scroll;
+    bottom: 0;
+}
+
+.right_panel_content {
+    margin-top: 100px;
+    width: 200px;
+    font-family: 'Madeleina Sans';
+    height: auto;
+    text-align: center;
+}
+
+    .right_panel_content p {
+        float: right;
+        margin-right: 5px;
+        width: 50px;
+        margin-top: -20px;
+        padding: 10px 5px;
+        background: #ffd800;
+        color: #1b2a33;
+        border-radius: 4px;
+    }
+
+/*#endregion*/
+
+/*#region TOP*/
+.bodys {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+    height: auto;
+    background-color: black;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+.bodys-title {
+    text-align: left;
+    padding: 5px;
+    left: 30px;
+    height: 200px;
+    /*background: #1b2a33;   */
+    background: url(../Images/system.jpg) no-repeat fixed center;
+    transition: .2s;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.bodys-title p, h1 {
+    float: left;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    border-radius: 4px;
+}
+
+
+.bodys-title ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bodys-title a {
+    float: left;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bodys-title ul li {
+    float: left;
+}
+
+    .bodys-title ul li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    .bodys-title ul li:hover {
+        background-color: #1b2a33;
+        color: white;
+    }
+
+    .bodys-title ul li a:hover {
+        color: #ffd800;
+    }
+
+
+.bodys-cizgi {
+    width: 100%;
+    height: 1px;
+    background: #464343;
+}
+
+.bodys-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 5px;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #464343;
+    border-radius: 4px;
+    /*background: #464343;*/
+    -webkit-box-shadow: 16px 6px 96px -50px rgba(122,122,122,1);
+    -moz-box-shadow: 16px 6px 96px -50px rgba(122,122,122,1);
+    box-shadow: 16px 6px 96px -50px rgba(122,122,122,1);
+    transition: all ease 1s;
+}
+
+    .bodys-content:hover {
+        background: url(../Images/template.png);
+        background-size: cover;
+        cursor: pointer;
+        transition: all ease 1s;
+    }
+
+.bodys-content-title {
+    margin-top: -20px;
+    position: absolute;
+    width: auto;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    color: #ffd800;
+}
+
+
+
+
+/*#endregion*/
+
+/*#region ICERIK*/
+.cerceve {
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    float: left;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: auto;
+    height: 500px;
+    margin: 10px;
+    float: left;
+    transition: all 2s ease-in-out;
+}
+
+.card-about {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 470px;
+    height: auto;
+    position: relative;
+    margin: 10px;
+}
+
+    .card-about p {
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding: 20px;
+        font-family: 'Madeleina Sans';
+        letter-spacing: 1px;
+        margin-right: 155px;
+    }
+/*.card:hover h3 {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+        margin-right: auto;
+        margin-left: auto;
+        color: #fff;
+        cursor: pointer;
+        font-size: 24px;
+        background-color: #38abda;
+    }*/
+
+.card h3 {
+    font-family: 'Madeleina Sans';
+    color: white;
+    top: 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    margin-top: -5px;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+
+
+.card img {
+    width: 300px;
+    padding: 50px;
+    height: auto;
+    width: 300px;
+}
+
+.card p {
+    color: black;
+    width: 600px;
+    padding-left: 10px;
+    margin-top: -10px;
+    padding-right: 10px;
+    display: block;
+    font-size: 14px;
+    font-family: cursive;
+    text-align: left;
+}
+
+    .card p i {
+        color: rgba(58,186,247,1);
+    }
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../WebFonts/CaviarDreams.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BRUSHSCN';
+    src: url('../WebFonts/BRUSHSCN.TTF') format('truetype');
+}
+
+.mail-box {
+    left: 0;
+    float: left;
+    width: 100%;
+    background: url(../Images/computer.jpg) no-repeat fixed center;
+}
+
+    .mail-box h1 {
+        top: 0;
+        left: 10px;
+        color: black;
+        position: relative;
+        text-align: inherit;
+        margin-left: 5px;
+    }
+
+.mail-content {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 470px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgba(255,255,255,.2);
+    cursor: pointer;
+    float: right;
+    transition: all 2s ease-in-out;
+}
+
+    .mail-content i {
+        padding: 10px;
+        font-size: 14px;
+        color: black;
+        letter-spacing: 1px;
+    }
+
+
+.mail-send {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 470px;
+    height: auto;
+    background-color: rgba(255,255,255,.2);
+    cursor: pointer;
+    padding: 10px;
+    border-left: 1px solid #1b2a33;
+    margin: 15px;
+    margin-bottom: 100px;
+    float: left;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+    .mail-send h1 {
+        top: 0;
+        left: 10px;
+        color: black;
+        font-size: 18px;
+        position: relative;
+        text-align: inherit;
+        margin-left: 5px;
+    }
+
+.teknoloji {
+    width: 470px;
+    padding: 15px;
+    margin: 10px;
+    float: left;
+    margin-left: 150px;
+}
+
+    .teknoloji h1 {
+        font-size: 18px;
+        color: black;
+        font-family: 'Madeleina Sans';
+    }
+
+    .teknoloji table {
+        float: right;
+        color: black;
+        font-size: 18px;
+        text-align: center;
+    }
+
+        .teknoloji table tr p {
+            font-family: 'Madeleina Sans';
+            font-size: 24px;
+            color: black;
+            float: right;
+            margin: 5px;
+        }
+
+        .teknoloji table tr td {
+            font-family: 'Madeleina Sans';
+            font-size: 24px;
+            color: black;
+            margin: 5px;
+        }
+
+        .teknoloji table tr th {
+            text-align: center;
+            font-family: 'Madeleina Sans';
+            color: #090909;
+            font-display: block;
+        }
+
+            .teknoloji table tr th:hover {
+                cursor: pointer;
+                color: #635e5e;
+            }
+
+/*#endregion*/
+
+/*#region İLETİŞİM*/
+
+.contact {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+    z-index: -1;
+}
+
+.contact-content {
+}
+
+/*#endregion*/
+
+/*#region TEXTBOX,BUTTON, HEPSİ BURADA ITEMLERİN*/
+.image {
+    float: right;
+    border-radius: 25px;
+    z-index: -9999;
+    position: relative;
+}
+
+.textbox {
+    padding: 7px 13px;
+    margin: 10px;
+    float: left;
+    width: auto;
+    font-family: 'Madeleina Sans';
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.textarea {
+    top: 0;
+    float: left;
+    width: 93%;
+    height: 200px;
+    font-family: 16px;
+    font-family: 'Madeleina Sans';
+    margin: 10px;
+    text-align: inherit;
+}
+
+    .textarea input {
+        margin: 10px;
+    }
+
+
+.button {
+    padding: 10px 25px;
+    border: 1px solid #eeeeee;
+    background: #38abda;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Madeleina Sans';
+    font-size: medium;
+    line-height: 40px;
+    text-transform: uppercase;
+    float: right;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .button:hover {
+        background: #fff;
+        color: #38abda;
+        border: 1px solid #38abda;
+    }
+
+    .button-back i{
+        padding:10px 15px;
+        margin:10px;
+        float:left;
+        font-size:30px;
+    }
+
+.button-visual {
+    padding: 15px 32px;
+    border: none;
+    background: #38abda;
+    cursor: pointer;
+    color: white;
+    font-size: medium;
+    border-radius: 40px;
+    font-family: 'Madeleina Sans';
+    float: right;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .button-visual:hover {
+        background: #fff;
+        color: #38abda;
+        border: 1px solid #38abda;
+    }
+
+/*#endregion*/
+
+/*************************************/
+/*************************************/
+/*#endregion*/
+/*#region LAPTOP TASARIM*/
+@media screen and (min-width: 1366px) {
+    .card-about {
+        margin-left: -30px;
+        float: right;
+        height: 470px;
+        width: 474px;
+    }
+}
+/*#endregion*/
+
+
+/*#region TABLET TASARIM*/
+
+/*#region TOP NAVBAR*/
+
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region MOBİL TASARIM*/
+@media screen and (max-width: 500px) {
+    .cerceve {
+        margin-left: 10px;
+    }
+
+    .card p {
+        width: auto;
+        margin-top: -25px;
+    }
+}
+
+.image {
+    border-radius: 25px;
+}
+
+.card-about {
+    float: right;
+    height: 470px;
+}
+
+.teknoloji {
+    width: auto;
+    padding: 15px;
+    margin: 10px;
+    float: left;
+}
+/*#region TOP NAVBAR*/
+
+
+/*#endregion*/
+
+/*#endregion*/
+

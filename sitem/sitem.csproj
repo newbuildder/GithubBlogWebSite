@@ -1,0 +1,225 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F722BA1D-2EBE-4B61-B0C7-DE6982E06677}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sitem</RootNamespace>
+    <AssemblyName>sitem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44365</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Style\Css\all.min.css" />
+    <Content Include="Style\Css\main.css" />
+    <Content Include="Style\Images\database.jpg" />
+    <Content Include="Style\Images\db.jpg" />
+    <Content Include="Style\Images\download.png" />
+    <Content Include="Style\Images\hakkında.jpg" />
+    <Content Include="Style\Images\samet_about.jpg" />
+    <Content Include="Style\Images\vs.png" />
+    <Content Include="Style\Images\profile.png" />
+    <Content Include="Style\Images\code.jpg" />
+    <Content Include="Style\Images\matrix.jpg" />
+    <Content Include="Style\Images\template.png" />
+    <Content Include="Style\Images\viita.jpg" />
+    <Content Include="Style\Images\star.png" />
+    <Content Include="Style\Images\back.jpg" />
+    <Content Include="Style\Images\ss.jpg" />
+    <Content Include="Style\Js\main.js" />
+    <Content Include="Style\WebFonts\fa-brands-400.svg" />
+    <Content Include="Style\WebFonts\fa-regular-400.svg" />
+    <Content Include="Style\WebFonts\fa-solid-900.svg" />
+    <Content Include="View\Database.aspx" />
+    <Content Include="View\Mobile.aspx" />
+    <Content Include="View\Web.aspx" />
+    <Content Include="View\WebDetail.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Style\Images\partum.png" />
+    <Content Include="Style\Images\partumlogo.png" />
+    <Content Include="Style\Images\rapor.png" />
+    <Content Include="Style\WebFonts\Caviar_Dreams_Bold.ttf" />
+    <Content Include="Style\WebFonts\CaviarDreams_BoldItalic.ttf" />
+    <Content Include="Style\WebFonts\CaviarDreams_Italic.ttf" />
+    <Content Include="Style\WebFonts\CaviarDreams.ttf" />
+    <Content Include="Style\Images\yenilogo.png" />
+    <Content Include="Style\Images\watch.jpg" />
+    <Content Include="Style\Images\apple.jpg" />
+    <Content Include="Style\Images\system.jpg" />
+    <Content Include="Style\Images\ipad.jpg" />
+    <Content Include="Style\Images\laptop.jpg" />
+    <Content Include="Style\Images\computer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Shared\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Database.aspx.cs">
+      <DependentUpon>Database.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Database.aspx.designer.cs">
+      <DependentUpon>Database.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmptyClass.cs" />
+    <Compile Include="View\Mobile.aspx.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Mobile.aspx.designer.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Web.aspx.cs">
+      <DependentUpon>Web.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Web.aspx.designer.cs">
+      <DependentUpon>Web.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\WebDetail.aspx.cs">
+      <DependentUpon>WebDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\WebDetail.aspx.designer.cs">
+      <DependentUpon>WebDetail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Shared\Main.Master" />
+    <Content Include="Style\WebFonts\fa-brands-400.eot" />
+    <Content Include="Style\WebFonts\fa-brands-400.ttf" />
+    <Content Include="Style\WebFonts\fa-brands-400.woff" />
+    <Content Include="Style\WebFonts\fa-brands-400.woff2" />
+    <Content Include="Style\WebFonts\fa-regular-400.eot" />
+    <Content Include="Style\WebFonts\fa-regular-400.ttf" />
+    <Content Include="Style\WebFonts\fa-regular-400.woff" />
+    <Content Include="Style\WebFonts\fa-regular-400.woff2" />
+    <Content Include="Style\WebFonts\fa-solid-900.eot" />
+    <Content Include="Style\WebFonts\fa-solid-900.ttf" />
+    <Content Include="Style\WebFonts\fa-solid-900.woff" />
+    <Content Include="Style\WebFonts\fa-solid-900.woff2" />
+    <Content Include="Style\WebFonts\Madeleina Sans.otf" />
+    <Content Include="Style\WebFonts\BRUSHSCN.TTF" />
+    <Content Include="Style\WebFonts\Chelsea.ttf" />
+    <Content Include="Style\WebFonts\radyo.ttf" />
+    <Content Include="Style\WebFonts\Choplin-ExtraLight-DEMO.eot" />
+    <Content Include="Style\WebFonts\Choplin-ExtraLight-DEMO.otf" />
+    <Content Include="Style\WebFonts\Choplin-ExtraLight-DEMO.ttf" />
+    <Content Include="Style\WebFonts\Choplin-ExtraLight-DEMO.woff" />
+    <Content Include="Style\WebFonts\Choplin-ExtraLight-DEMO.woff2" />
+    <Content Include="Style\WebFonts\Choplin-Medium-DEMO.eot" />
+    <Content Include="Style\WebFonts\Choplin-Medium-DEMO.otf" />
+    <Content Include="Style\WebFonts\Choplin-Medium-DEMO.ttf" />
+    <Content Include="Style\WebFonts\Choplin-Medium-DEMO.woff" />
+    <Content Include="Style\WebFonts\Choplin-Medium-DEMO.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="View\Blog.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Db\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51504</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44365/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
