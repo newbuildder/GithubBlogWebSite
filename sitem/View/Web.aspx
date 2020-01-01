@@ -189,7 +189,10 @@
                 </tr>
             </table>
             <a href="Blog.aspx" class="button-back"><i class="fas fa-arrow-alt-circle-left"></i></a>
+
         </div>
+
+
     </div>
 
 </asp:Content>

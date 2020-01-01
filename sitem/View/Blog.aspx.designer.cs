@@ -13,6 +13,24 @@ namespace sitem.View {
     public partial class Blog {
         
         /// <summary>
+        /// ScriptManager1 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiþ alan.
+        /// Deðiþtirmek için, alan bildirimini tasarýmcý dosyasýndan arka plan kod dosyasýna taþýyýn.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// UpdatePanel1 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiþ alan.
+        /// Deðiþtirmek için, alan bildirimini tasarýmcý dosyasýndan arka plan kod dosyasýna taþýyýn.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// btn_visual denetimi.
         /// </summary>
         /// <remarks>
@@ -83,14 +101,5 @@ namespace sitem.View {
         /// Deðiþtirmek için, alan bildirimini tasarýmcý dosyasýndan arka plan kod dosyasýna taþýyýn.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_mail_send;
-        
-        /// <summary>
-        /// Image1 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiþ alan.
-        /// Deðiþtirmek için, alan bildirimini tasarýmcý dosyasýndan arka plan kod dosyasýna taþýyýn.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
     }
 }
