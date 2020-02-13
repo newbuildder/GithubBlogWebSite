@@ -181,6 +181,7 @@
     <Content Include="Style\WebFonts\Choplin-Medium-DEMO.ttf" />
     <Content Include="Style\WebFonts\Choplin-Medium-DEMO.woff" />
     <Content Include="Style\WebFonts\Choplin-Medium-DEMO.woff2" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -50,8 +50,7 @@
                     <h1>İletişim</h1>
                     <div style="width: 100%; margin-top: 50px; height: 1px; background-color: white;"></div>
                     <div><i class="fas fa-phone-volume">+90 542 820 66 68</i></div>
-                    <div><i class="fas fa-envelope">sametsaryldz@gmail.com</i></div>
-                    <div><i class="fas fa-envelope">samet_sariyildiz@hotmail.com</i></div>
+                    <div><i class="fas fa-envelope">mail@sametsariyildiz.com</i></div>                  
                     <div><i class="fas fa-map-marker-alt">Merkez/KIRŞEHİR</i></div>
                 </div>
             </div>
@@ -95,32 +94,11 @@
                         <th>Yapay Zekanın Gelişimi</th>
                     </tr>
                     <tr>
-                        <th>Visual Studio</th>
+                        <th>Android mi? IOS mu?</th>
                     </tr>
                     <tr>
-                        <th>Visual Studio</th>
-                    </tr>
-                    <tr>
-                        <th>Visual Studio</th>
-                    </tr>
-                    <tr>
-                        <th>Visual Studio</th>
-                    </tr>
-                    <tr>
-                        <th>Visual Studio</th>
-                    </tr>
-                    <tr>
-                        <th>Visual Studio</th>
-                    </tr>
-                    <tr>
-                        <th>Visual Studio</th>
-                    </tr>
-                    <tr>
-                        <th>Visual Studio</th>
-                    </tr>
-                    <tr>
-                        <th>Visual Studio</th>
-                    </tr>
+                        <th>Kod yazmaya başlamak</th>
+                    </tr>                 
 
                 </table>
             </div>
